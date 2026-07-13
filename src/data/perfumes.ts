@@ -1,11 +1,11 @@
-import addictionAsset from "@/assets/perfumes/addiction.webp.asset.json";
-import afterhoursAsset from "@/assets/perfumes/afterhours.webp.asset.json";
-import blackVanillaAsset from "@/assets/perfumes/black-vanilla.webp.asset.json";
-import legacy7Asset from "@/assets/perfumes/legacy-7.webp.asset.json";
-import marineAsset from "@/assets/perfumes/marine.webp.asset.json";
-import midnightOudAsset from "@/assets/perfumes/midnight-oud.webp.asset.json";
-import perfectAsset from "@/assets/perfumes/perfect.webp.asset.json";
-import sapphireAsset from "@/assets/perfumes/sapphire.webp.asset.json";
+import addictionAsset from "@/assets/perfumes/addiction.webp";
+import afterhoursAsset from "@/assets/perfumes/afterhours.webp";
+import blackVanillaAsset from "@/assets/perfumes/black-vanilla.webp";
+import legacy7Asset from "@/assets/perfumes/legacy-7.webp";
+import marineAsset from "@/assets/perfumes/marine.webp";
+import midnightOudAsset from "@/assets/perfumes/midnight-oud.webp";
+import perfectAsset from "@/assets/perfumes/perfect.webp";
+import sapphireAsset from "@/assets/perfumes/sapphire.webp";
 
 export type Gender = "men" | "women" | "unisex";
 
@@ -67,12 +67,30 @@ const MRP_50 = 499;
 const PRICE_20 = 99;
 
 const baseReviews = (slug: string): Review[] => [
-  { id: `${slug}-r1`, name: "Aarav M.", rating: 5, date: "3 days ago", verified: true,
-    text: "Incredible projection and longevity. Got compliments all night — this is my new signature." },
-  { id: `${slug}-r2`, name: "Riya S.", rating: 5, date: "1 week ago", verified: true,
-    text: "The packaging alone feels ₹3000. The scent? Genuinely premium. Worth every rupee." },
-  { id: `${slug}-r3`, name: "Kabir V.", rating: 4, date: "2 weeks ago", verified: true,
-    text: "Smells expensive without being loud. Perfect balance of warmth and freshness." },
+  {
+    id: `${slug}-r1`,
+    name: "Aarav M.",
+    rating: 5,
+    date: "3 days ago",
+    verified: true,
+    text: "Incredible projection and longevity. Got compliments all night — this is my new signature.",
+  },
+  {
+    id: `${slug}-r2`,
+    name: "Riya S.",
+    rating: 5,
+    date: "1 week ago",
+    verified: true,
+    text: "The packaging alone feels ₹3000. The scent? Genuinely premium. Worth every rupee.",
+  },
+  {
+    id: `${slug}-r3`,
+    name: "Kabir V.",
+    rating: 4,
+    date: "2 weeks ago",
+    verified: true,
+    text: "Smells expensive without being loud. Perfect balance of warmth and freshness.",
+  },
 ];
 
 export const perfumes: Perfume[] = [
@@ -92,18 +110,28 @@ export const perfumes: Perfume[] = [
       heart: ["Aged Oud", "Rose Absolute", "Patchouli"],
       base: ["Amber", "Sandalwood", "Soft Leather"],
     },
-    longevity: "10+ Hours", projection: "Strong",
+    longevity: "10+ Hours",
+    projection: "Strong",
     season: ["Autumn", "Winter"],
     occasion: ["Evening", "Date Night", "Formal"],
-    ingredients: "Alcohol Denat., Parfum (30%), Aqua, Aged Oud Oil, natural resins. IFRA 51 compliant. Cruelty-free.",
+    ingredients:
+      "Alcohol Denat., Parfum (30%), Aqua, Aged Oud Oil, natural resins. IFRA 51 compliant. Cruelty-free.",
     directions: "Two sprays on pulse points — inner wrists, base of neck, behind ears. Do not rub.",
-    price: PRICE_50, mrp: MRP_50, trialPrice: PRICE_20,
-    rating: 4.9, reviewCount: 187, bestSeller: true, featured: true, trending: true, signature: true,
+    price: PRICE_50,
+    mrp: MRP_50,
+    trialPrice: PRICE_20,
+    rating: 4.9,
+    reviewCount: 187,
+    bestSeller: true,
+    featured: true,
+    trending: true,
+    signature: true,
     reviews: baseReviews("midnight-oud"),
-    image: midnightOudAsset.url,
+    image: midnightOudAsset,
     seo: {
       title: "Midnight Oud — Aged Oud Eau de Parfum | Luxorée",
-      description: "Aged oud, saffron and amber. 10+ hour longevity. Strong projection. India's most-loved oud fragrance.",
+      description:
+        "Aged oud, saffron and amber. 10+ hour longevity. Strong projection. India's most-loved oud fragrance.",
     },
   },
   {
@@ -111,7 +139,8 @@ export const perfumes: Perfume[] = [
     name: "Afterhours",
     gender: "men",
     tagline: "For the hours the city forgets.",
-    shortDescription: "Smoked woods, black pepper and cardamom — nocturnal, magnetic, undeniably masculine.",
+    shortDescription:
+      "Smoked woods, black pepper and cardamom — nocturnal, magnetic, undeniably masculine.",
     description:
       "Afterhours is the fragrance of the quiet after the loud — cognac warmth, smoked cedar and a heart of iris and violet leaf, dried down with vetiver and tonka. It sits close to the skin at first, then slowly unfurls into something that people lean in to notice.",
     family: "Woody • Spicy",
@@ -122,18 +151,26 @@ export const perfumes: Perfume[] = [
       heart: ["Iris", "Violet Leaf", "Smoked Cedar"],
       base: ["Vetiver", "Tonka Bean", "Ambergris"],
     },
-    longevity: "8–10 Hours", projection: "Moderate",
+    longevity: "8–10 Hours",
+    projection: "Moderate",
     season: ["Autumn", "Winter", "Cool Spring"],
     occasion: ["Evening", "Dinner", "Bar"],
-    ingredients: "Alcohol Denat., Parfum (25%), Aqua, natural essential oils. IFRA 51 compliant. Cruelty-free.",
+    ingredients:
+      "Alcohol Denat., Parfum (25%), Aqua, natural essential oils. IFRA 51 compliant. Cruelty-free.",
     directions: "Two sprays — chest and neck. Layer with an unscented body oil for a longer stay.",
-    price: PRICE_50, mrp: MRP_50, trialPrice: PRICE_20,
-    rating: 4.8, reviewCount: 142, bestSeller: true, trending: true,
+    price: PRICE_50,
+    mrp: MRP_50,
+    trialPrice: PRICE_20,
+    rating: 4.8,
+    reviewCount: 142,
+    bestSeller: true,
+    trending: true,
     reviews: baseReviews("afterhours"),
-    image: afterhoursAsset.url,
+    image: afterhoursAsset,
     seo: {
       title: "Afterhours — Smoked Woods Eau de Parfum | Luxorée",
-      description: "Cognac, smoked cedar and vetiver. An 8–10 hour nocturnal fragrance made for evening wear.",
+      description:
+        "Cognac, smoked cedar and vetiver. An 8–10 hour nocturnal fragrance made for evening wear.",
     },
   },
   {
@@ -152,18 +189,29 @@ export const perfumes: Perfume[] = [
       heart: ["Madagascar Vanilla", "Tobacco Leaf", "Tonka"],
       base: ["Benzoin", "Sandalwood", "Birch Smoke"],
     },
-    longevity: "8–10 Hours", projection: "Strong",
+    longevity: "8–10 Hours",
+    projection: "Strong",
     season: ["Autumn", "Winter"],
     occasion: ["Date Night", "Cozy Evenings", "Weekend"],
-    ingredients: "Alcohol Denat., Parfum (27%), Aqua, Madagascar vanilla absolute, natural resins. IFRA 51 compliant.",
-    directions: "One or two sprays are enough — Black Vanilla carries. Best on skin after a warm shower.",
-    price: PRICE_50, mrp: MRP_50, trialPrice: PRICE_20,
-    rating: 4.9, reviewCount: 208, bestSeller: true, featured: true, trending: true, signature: true,
+    ingredients:
+      "Alcohol Denat., Parfum (27%), Aqua, Madagascar vanilla absolute, natural resins. IFRA 51 compliant.",
+    directions:
+      "One or two sprays are enough — Black Vanilla carries. Best on skin after a warm shower.",
+    price: PRICE_50,
+    mrp: MRP_50,
+    trialPrice: PRICE_20,
+    rating: 4.9,
+    reviewCount: 208,
+    bestSeller: true,
+    featured: true,
+    trending: true,
+    signature: true,
     reviews: baseReviews("black-vanilla"),
-    image: blackVanillaAsset.url,
+    image: blackVanillaAsset,
     seo: {
       title: "Black Vanilla — Gourmand Eau de Parfum | Luxorée",
-      description: "Madagascar vanilla, tobacco leaf and benzoin. A rich, addictive gourmand for cool weather.",
+      description:
+        "Madagascar vanilla, tobacco leaf and benzoin. A rich, addictive gourmand for cool weather.",
     },
   },
   {
@@ -182,18 +230,26 @@ export const perfumes: Perfume[] = [
       heart: ["Geranium", "Oud Wood", "Cardamom"],
       base: ["Amber", "Cedar", "White Musk"],
     },
-    longevity: "8–10 Hours", projection: "Moderate",
+    longevity: "8–10 Hours",
+    projection: "Moderate",
     season: ["All Seasons"],
     occasion: ["Office", "Meetings", "Daily Wear"],
-    ingredients: "Alcohol Denat., Parfum (24%), Aqua, natural bergamot and cedar oils. IFRA 51 compliant.",
+    ingredients:
+      "Alcohol Denat., Parfum (24%), Aqua, natural bergamot and cedar oils. IFRA 51 compliant.",
     directions: "Two sprays on pulse points before dressing. Reapply once at midday if needed.",
-    price: PRICE_50, mrp: MRP_50, trialPrice: PRICE_20,
-    rating: 4.7, reviewCount: 124, featured: true, signature: true,
+    price: PRICE_50,
+    mrp: MRP_50,
+    trialPrice: PRICE_20,
+    rating: 4.7,
+    reviewCount: 124,
+    featured: true,
+    signature: true,
     reviews: baseReviews("legacy-7"),
-    image: legacy7Asset.url,
+    image: legacy7Asset,
     seo: {
       title: "Legacy-7 — Everyday Aromatic Eau de Parfum | Luxorée",
-      description: "Bergamot, oud wood and amber. A refined all-day fragrance for professional wear.",
+      description:
+        "Bergamot, oud wood and amber. A refined all-day fragrance for professional wear.",
     },
   },
   {
@@ -212,18 +268,25 @@ export const perfumes: Perfume[] = [
       heart: ["Neroli", "Lavender", "Jasmine"],
       base: ["Driftwood", "Ambergris", "White Musk"],
     },
-    longevity: "6–8 Hours", projection: "Moderate",
+    longevity: "6–8 Hours",
+    projection: "Moderate",
     season: ["Spring", "Summer"],
     occasion: ["Daily Wear", "Travel", "Beach", "Office"],
-    ingredients: "Alcohol Denat., Parfum (22%), Aqua, natural neroli oil, marine accord. IFRA 51 compliant.",
+    ingredients:
+      "Alcohol Denat., Parfum (22%), Aqua, natural neroli oil, marine accord. IFRA 51 compliant.",
     directions: "Three sprays — chest, neck, wrists. Reapply mid-afternoon in summer heat.",
-    price: PRICE_50, mrp: MRP_50, trialPrice: PRICE_20,
-    rating: 4.7, reviewCount: 156, trending: true,
+    price: PRICE_50,
+    mrp: MRP_50,
+    trialPrice: PRICE_20,
+    rating: 4.7,
+    reviewCount: 156,
+    trending: true,
     reviews: baseReviews("marine"),
-    image: marineAsset.url,
+    image: marineAsset,
     seo: {
       title: "Marine — Fresh Aquatic Eau de Parfum | Luxorée",
-      description: "Sea salt, neroli and driftwood. A clean, premium aquatic for spring and summer.",
+      description:
+        "Sea salt, neroli and driftwood. A clean, premium aquatic for spring and summer.",
     },
   },
   {
@@ -242,18 +305,27 @@ export const perfumes: Perfume[] = [
       heart: ["Iris Butter", "Blue Cypress", "Geranium"],
       base: ["Ambroxan", "Cashmere Musk", "Pale Wood"],
     },
-    longevity: "8–10 Hours", projection: "Moderate",
+    longevity: "8–10 Hours",
+    projection: "Moderate",
     season: ["All Seasons"],
     occasion: ["Office", "Daily Wear", "Casual Dinner"],
-    ingredients: "Alcohol Denat., Parfum (25%), Aqua, iris butter, ambroxan. IFRA 51 compliant. Cruelty-free.",
-    directions: "Two sprays on pulse points. Sapphire projects at arm's length — no need to overspray.",
-    price: PRICE_50, mrp: MRP_50, trialPrice: PRICE_20,
-    rating: 4.8, reviewCount: 134, featured: true, signature: true,
+    ingredients:
+      "Alcohol Denat., Parfum (25%), Aqua, iris butter, ambroxan. IFRA 51 compliant. Cruelty-free.",
+    directions:
+      "Two sprays on pulse points. Sapphire projects at arm's length — no need to overspray.",
+    price: PRICE_50,
+    mrp: MRP_50,
+    trialPrice: PRICE_20,
+    rating: 4.8,
+    reviewCount: 134,
+    featured: true,
+    signature: true,
     reviews: baseReviews("sapphire"),
-    image: sapphireAsset.url,
+    image: sapphireAsset,
     seo: {
       title: "Sapphire — Iris & Cypress Eau de Parfum | Luxorée",
-      description: "Cardamom, iris butter and ambroxan. A modern, refined signature for daily wear.",
+      description:
+        "Cardamom, iris butter and ambroxan. A modern, refined signature for daily wear.",
     },
   },
   {
@@ -261,7 +333,8 @@ export const perfumes: Perfume[] = [
     name: "Perfect",
     gender: "women",
     tagline: "The one you'll wear on the day everything matters.",
-    shortDescription: "Peony, jasmine sambac and cashmere musk — romantic, radiant, effortlessly feminine.",
+    shortDescription:
+      "Peony, jasmine sambac and cashmere musk — romantic, radiant, effortlessly feminine.",
     description:
       "Perfect is a bright bouquet of peony and Italian bergamot, a heart of jasmine sambac and Bulgarian rose, drying down to cashmere musk, blonde woods and a hint of vanilla — the fragrance equivalent of a perfectly cut white silk dress.",
     family: "Floral • Musk",
@@ -272,15 +345,24 @@ export const perfumes: Perfume[] = [
       heart: ["Jasmine Sambac", "Bulgarian Rose", "Magnolia"],
       base: ["Cashmere Musk", "Blonde Woods", "Vanilla Bourbon"],
     },
-    longevity: "8–10 Hours", projection: "Moderate",
+    longevity: "8–10 Hours",
+    projection: "Moderate",
     season: ["Spring", "Summer", "Autumn"],
     occasion: ["Date Night", "Weddings", "Daily Wear"],
-    ingredients: "Alcohol Denat., Parfum (26%), Aqua, jasmine sambac absolute, rose oil. IFRA 51 compliant.",
+    ingredients:
+      "Alcohol Denat., Parfum (26%), Aqua, jasmine sambac absolute, rose oil. IFRA 51 compliant.",
     directions: "Two sprays on pulse points. Spritz once into hair for a soft trail.",
-    price: PRICE_50, mrp: MRP_50, trialPrice: PRICE_20,
-    rating: 4.9, reviewCount: 219, bestSeller: true, featured: true, trending: true, signature: true,
+    price: PRICE_50,
+    mrp: MRP_50,
+    trialPrice: PRICE_20,
+    rating: 4.9,
+    reviewCount: 219,
+    bestSeller: true,
+    featured: true,
+    trending: true,
+    signature: true,
     reviews: baseReviews("perfect"),
-    image: perfectAsset.url,
+    image: perfectAsset,
     seo: {
       title: "Perfect — Jasmine & Rose Eau de Parfum | Luxorée",
       description: "Peony, jasmine sambac and cashmere musk. A radiant floral for romantic wear.",
@@ -302,24 +384,42 @@ export const perfumes: Perfume[] = [
       heart: ["Bulgarian Rose", "Ylang-Ylang", "Orange Blossom"],
       base: ["Vanilla", "Patchouli", "Benzoin", "Oud"],
     },
-    longevity: "10+ Hours", projection: "Strong",
+    longevity: "10+ Hours",
+    projection: "Strong",
     season: ["Autumn", "Winter"],
     occasion: ["Date Night", "Evening", "Special Occasions"],
-    ingredients: "Alcohol Denat., Parfum (28%), Aqua, Bulgarian rose absolute, oud. IFRA 51 compliant.",
-    directions: "One spray is enough — Addiction is intense. Two if you want to be impossible to forget.",
-    price: PRICE_50, mrp: MRP_50, trialPrice: PRICE_20,
-    rating: 4.9, reviewCount: 176, bestSeller: true, trending: true,
+    ingredients:
+      "Alcohol Denat., Parfum (28%), Aqua, Bulgarian rose absolute, oud. IFRA 51 compliant.",
+    directions:
+      "One spray is enough — Addiction is intense. Two if you want to be impossible to forget.",
+    price: PRICE_50,
+    mrp: MRP_50,
+    trialPrice: PRICE_20,
+    rating: 4.9,
+    reviewCount: 176,
+    bestSeller: true,
+    trending: true,
     reviews: baseReviews("addiction"),
-    image: addictionAsset.url,
+    image: addictionAsset,
     seo: {
       title: "Addiction — Rose, Saffron & Vanilla Eau de Parfum | Luxorée",
-      description: "Saffron, Bulgarian rose and vanilla. A sensual, long-lasting fragrance for evening wear.",
+      description:
+        "Saffron, Bulgarian rose and vanilla. A sensual, long-lasting fragrance for evening wear.",
     },
   },
 ];
 
 export const FAMILY_TAGS: FamilyTag[] = [
-  "Fresh", "Woody", "Floral", "Sweet", "Citrus", "Aquatic", "Oud", "Amber", "Spicy", "Gourmand",
+  "Fresh",
+  "Woody",
+  "Floral",
+  "Sweet",
+  "Citrus",
+  "Aquatic",
+  "Oud",
+  "Amber",
+  "Spicy",
+  "Gourmand",
 ];
 
 export const bySlug = (slug: string) => perfumes.find((p) => p.slug === slug);

@@ -7,7 +7,6 @@ import { useWishlist } from "@/lib/wishlist";
 const links = [
   { to: "/" as const, label: "Home" },
   { to: "/shop" as const, label: "Shop" },
-  { to: "/collections" as const, label: "Collections" },
   { to: "/about" as const, label: "About" },
 ];
 
@@ -35,7 +34,11 @@ export function Nav() {
       }`}
     >
       <div className="container-luxe flex h-16 items-center justify-between md:h-20">
-        <Link to="/" className="font-display text-xl tracking-[0.35em] text-gold md:text-2xl" aria-label="Luxoree home">
+        <Link
+          to="/"
+          className="font-display text-xl tracking-[0.35em] text-gold md:text-2xl"
+          aria-label="Luxoree home"
+        >
           LUXORÉE
         </Link>
 
@@ -54,7 +57,9 @@ export function Nav() {
         </nav>
 
         <div className="flex items-center gap-1.5 md:gap-3">
-          <IconBtn label="Search"><Search className="h-[18px] w-[18px]" /></IconBtn>
+          <IconBtn label="Search">
+            <Search className="h-[18px] w-[18px]" />
+          </IconBtn>
           <Link
             to="/wishlist"
             aria-label={`Wishlist (${wishCount} items)`}
@@ -67,7 +72,9 @@ export function Nav() {
               </span>
             )}
           </Link>
-          <IconBtn label="Account"><User className="h-[18px] w-[18px]" /></IconBtn>
+          <IconBtn label="Account">
+            <User className="h-[18px] w-[18px]" />
+          </IconBtn>
           <button
             aria-label={`Cart (${count} items)`}
             onClick={openDrawer}
