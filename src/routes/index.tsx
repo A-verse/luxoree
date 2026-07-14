@@ -3,9 +3,7 @@ import { motion, useReducedMotion, useScroll, useTransform } from "framer-motion
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import {
-  ArrowRight, Star, ShieldCheck, Truck, Sparkles, Flame,
-} from "lucide-react";
+import { ArrowRight, Star, ShieldCheck, Truck, Sparkles, Flame } from "lucide-react";
 
 import { bestSellers, featured, perfumes } from "@/data/perfumes";
 import { ProductCard } from "@/components/site/ProductCard";
@@ -17,9 +15,16 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Luxorée — Hand-Blended Luxury Fragrances | Made in India" },
-      { name: "description", content: "Eight signature Eau de Parfums, hand-blended in India. 8–10 hour longevity, IFRA-compliant. Free delivery over ₹999, cash on delivery available." },
+      {
+        name: "description",
+        content:
+          "Eight signature Eau de Parfums, hand-blended in India. 8–10 hour longevity, IFRA-compliant. Free delivery over ₹999, cash on delivery available.",
+      },
       { property: "og:title", content: "Luxorée — Live Luxuriously" },
-      { property: "og:description", content: "Eight signature fragrances. Long-lasting, hand-blended, unmistakably premium." },
+      {
+        property: "og:description",
+        content: "Eight signature fragrances. Long-lasting, hand-blended, unmistakably premium.",
+      },
       { property: "og:type", content: "website" },
       { property: "og:url", content: `${SITE.domain}/` },
       { property: "og:image", content: perfumes[0].image },
@@ -88,8 +93,13 @@ function Hero() {
         ".hero-line",
         { y: 80, opacity: 0, clipPath: "inset(0 0 100% 0)" },
         {
-          y: 0, opacity: 1, clipPath: "inset(0 0 0% 0)",
-          duration: 1.3, ease: "power4.out", stagger: 0.12, delay: 0.15,
+          y: 0,
+          opacity: 1,
+          clipPath: "inset(0 0 0% 0)",
+          duration: 1.3,
+          ease: "power4.out",
+          stagger: 0.12,
+          delay: 0.15,
         },
       );
       gsap.fromTo(
@@ -117,8 +127,14 @@ function Hero() {
       </div>
 
       {/* Vertical rules */}
-      <div aria-hidden className="pointer-events-none absolute inset-y-0 left-6 hidden w-px bg-gold/20 md:block" />
-      <div aria-hidden className="pointer-events-none absolute inset-y-0 right-6 hidden w-px bg-gold/20 md:block" />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-y-0 left-6 hidden w-px bg-gold/20 md:block"
+      />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-y-0 right-6 hidden w-px bg-gold/20 md:block"
+      />
 
       {/* Rotating vertical caption */}
       <div className="pointer-events-none absolute left-6 top-1/2 hidden -translate-y-1/2 -rotate-90 origin-left text-[10px] uppercase tracking-[0.5em] text-gold/70 md:block">
@@ -127,7 +143,10 @@ function Hero() {
 
       <div className="relative mx-auto grid min-h-[92dvh] max-w-[1400px] grid-cols-1 items-center gap-8 px-6 pb-16 pt-14 md:grid-cols-12 md:pb-24 md:pt-20 lg:px-16">
         {/* Left / Text column */}
-        <motion.div style={{ y: yText, opacity }} className="relative z-10 md:col-span-6 lg:col-span-6">
+        <motion.div
+          style={{ y: yText, opacity }}
+          className="relative z-10 md:col-span-6 lg:col-span-6"
+        >
           <div className="mb-8 flex items-center gap-3 hero-meta">
             <span className="h-px w-10 bg-gold" />
             <span className="text-[10px] font-medium uppercase tracking-[0.45em] text-gold">
@@ -145,8 +164,8 @@ function Hero() {
           </h1>
 
           <p className="hero-meta mt-8 max-w-md text-base leading-relaxed text-ivory/70 md:text-lg">
-            Eight hand-blended fragrances, built on 25–30% parfum concentrate.
-            The kind of scent that stays in a room for hours after you leave.
+            Eight hand-blended fragrances, built on 25–30% parfum concentrate. The kind of scent
+            that stays in a room for hours after you leave.
           </p>
 
           <div className="hero-meta mt-10 flex flex-wrap items-center gap-4">
@@ -200,13 +219,10 @@ function Hero() {
               <div className="absolute left-1/2 top-1/2 h-[80%] w-[80%] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgba(201,162,76,0.35),transparent_70%)] blur-2xl" />
             </div>
 
-            <motion.img
+            <img
               src={heroPerfume.image}
               alt={`${heroPerfume.name} — signature bottle`}
               className="relative h-full w-full object-contain drop-shadow-[0_50px_80px_rgba(0,0,0,0.7)]"
-              initial={reduce ? false : { opacity: 0, scale: 0.9 }}
-              animate={reduce ? undefined : { opacity: 1, scale: 1 }}
-              transition={{ duration: 1.6, ease: [0.22, 0.61, 0.36, 1], delay: 0.2 }}
             />
 
             {/* Product label callout */}
@@ -282,7 +298,10 @@ function FeaturedRail() {
                 Chosen by the house.
               </h2>
             </div>
-            <Link to="/shop" className="hidden text-[11px] uppercase tracking-[0.3em] text-gold hover:text-gold-soft md:inline">
+            <Link
+              to="/shop"
+              className="hidden text-[11px] uppercase tracking-[0.3em] text-gold hover:text-gold-soft md:inline"
+            >
               View all fragrances →
             </Link>
           </div>
@@ -323,7 +342,8 @@ function CinematicShowcase() {
           <Reveal>
             <p className="text-[11px] uppercase tracking-[0.4em] text-gold">In the Spotlight</p>
             <h2 className="mt-3 font-display text-5xl leading-[1.02] text-ivory md:text-7xl">
-              {showcase.name}<span className="text-gold">.</span>
+              {showcase.name}
+              <span className="text-gold">.</span>
             </h2>
             <p className="mt-4 max-w-md text-lg italic text-ivory/70">{showcase.tagline}</p>
             <p className="mt-6 max-w-md text-base leading-relaxed text-ivory/75">
@@ -369,10 +389,26 @@ function CinematicShowcase() {
 
 function WhyLuxoree() {
   const pillars = [
-    { n: "01", t: "Hand-blended in small batches", d: "Every 500ml batch is composed and matured in our Jaipur atelier." },
-    { n: "02", t: "Premium parfum concentration", d: "25–30% parfum oil — double the concentration of typical Eau de Toilette." },
-    { n: "03", t: "IFRA-51 compliant", d: "Every note meets international skin-safe fragrance standards." },
-    { n: "04", t: "Direct, honest pricing", d: "You pay for the juice — not celebrity ads or department-store rent." },
+    {
+      n: "01",
+      t: "Hand-blended in small batches",
+      d: "Every 500ml batch is composed and matured in our Jaipur atelier.",
+    },
+    {
+      n: "02",
+      t: "Premium parfum concentration",
+      d: "25–30% parfum oil — double the concentration of typical Eau de Toilette.",
+    },
+    {
+      n: "03",
+      t: "IFRA-51 compliant",
+      d: "Every note meets international skin-safe fragrance standards.",
+    },
+    {
+      n: "04",
+      t: "Direct, honest pricing",
+      d: "You pay for the juice — not celebrity ads or department-store rent.",
+    },
   ];
   return (
     <section className="py-24 md:py-32">
@@ -414,7 +450,10 @@ function BestSellers() {
               <p className="text-[11px] uppercase tracking-[0.4em] text-gold">Best Sellers</p>
               <h2 className="mt-3 font-display text-4xl text-ivory md:text-6xl">Loved most.</h2>
             </div>
-            <Link to="/shop" className="hidden text-[11px] uppercase tracking-[0.3em] text-gold hover:text-gold-soft md:inline">
+            <Link
+              to="/shop"
+              className="hidden text-[11px] uppercase tracking-[0.3em] text-gold hover:text-gold-soft md:inline"
+            >
               View all →
             </Link>
           </div>
