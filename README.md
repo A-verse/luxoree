@@ -1,73 +1,54 @@
 <p align="center">
-  <img src="./public/cover.png" alt="Luxorée Cover" width="80%" />
+  <img src="./public/cover.png" alt="Luxorée Cover" width="50%" />
 </p>
 
-<h1 align="center">LUXORÉE</h1>
-
-<p align="center">
-  <strong>Luxury Fragrance Startup</strong>
-</p>
-
-<p align="center">
-  Editorial Luxury Perfume Ecommerce Platform built with React 19, TypeScript, TanStack Start & Supabase.
-</p>
-
-<p align="center">
-  Designed to deliver a cinematic shopping experience inspired by the world's leading luxury fragrance houses.
-</p>
+<h3 align="center">
+LUXORÉE - Fragrance Ecommerce Platform
+</h3>
 
 <p align="center">
   <a href="https://luxoree.vercel.app"><strong>Live Demo</strong></a>
-  ·
-  <a href="https://github.com/A-verse/luxoree"><strong>Repository</strong></a>
-  ·
+  &nbsp;·&nbsp;
   <a href="https://averse-peach.vercel.app"><strong>Portfolio</strong></a>
-  ·
+  &nbsp;·&nbsp;
   <a href="https://github.com/A-verse"><strong>GitHub</strong></a>
+  &nbsp;·&nbsp;
+  <a href="YOUR_LINKEDIN_URL"><strong>LinkedIn</strong></a>
 </p>
 
-<br>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/React_19-61DAFB?style=for-the-badge&logo=react&logoColor=white" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
-  <img src="https://img.shields.io/badge/TanStack_Start-FF6B35?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" />
-  <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" />
+
+<code>React 19</code> • <code>TypeScript</code> • <code>TanStack Start</code> • <code>TanStack Router</code> • <code>TanStack Query</code> • <code>Supabase</code> • <code>PostgreSQL</code> • <code>Tailwind CSS v4</code> • <code>Vercel</code>
+
 </p>
 
 ---
 
 # About
 
-Luxorée is an emerging luxury fragrance startup focused on creating premium-quality perfumes that combine sophisticated craftsmanship with accessible luxury.
+Luxorée is the official ecommerce website for an emerging luxury fragrance brand.
 
-The platform serves as the brand's official ecommerce website, delivering an editorial shopping experience through cinematic storytelling, premium visuals, and refined interactions. Rather than following a conventional online store layout, Luxorée emphasizes brand identity, product discovery, and an immersive customer journey.
+The platform is designed around an editorial shopping experience, combining cinematic visuals, curated fragrance collections, and a clean, modern interface. Rather than following a conventional ecommerce layout, the focus is on product storytelling and a premium browsing experience.
 
-Built using **React 19**, **TypeScript**, **TanStack Start**, and **Supabase**, the platform is engineered with a scalable architecture supporting secure checkout, order management, SEO optimization, and future business expansion.
+Built with React 19, TypeScript, TanStack Start, and Supabase, the application provides a scalable foundation for product management, order processing, secure checkout, and future business growth.
 
 ---
 
 # 🚀 Highlights
 
-- Premium editorial luxury fragrance ecommerce experience
-- Modern full-stack architecture
+- Editorial-inspired luxury ecommerce experience
 - Fully responsive desktop, tablet and mobile layouts
-- Cinematic luxury UI inspired by Dior, Tom Ford, Maison Margiela, Byredo & Le Labo
-- Shopping Cart & Wishlist
-- Product Collections
-- Discovery & Gift Sets
-- Configurable location-based delivery engine
-- Checkout flow with Cash on Delivery, Razorpay Ready & WhatsApp Orders
+- Product catalogue with curated collections
+- Shopping cart and wishlist
+- Discovery Sets and Gift Collections
+- Cash on Delivery and WhatsApp ordering flow
+- Configurable location-based delivery policy
 - Supabase backend integration
-- SEO optimized architecture
-- Dynamic Product Metadata
-- JSON-LD Structured Data
-- Open Graph & Twitter Cards
-- Sitemap & Robots.txt
-- Reusable component architecture
-- Accessibility-focused implementation
-- Production-ready scalable codebase
+- SEO-friendly architecture
+- Reusable component-based architecture
+- Type-safe development with TypeScript
+- Production deployment on Vercel
 
 ---
 
@@ -101,50 +82,30 @@ Built using **React 19**, **TypeScript**, **TanStack Start**, and **Supabase**, 
 
 ---
 
-# 🖼 Screenshots
-
-> Replace these with actual screenshots after deployment.
-
-| Hero | Shop |
-|------|------|
-| ![](./docs/hero.png) | ![](./docs/shop.png) |
-
-| Product Page | Checkout |
-|------|------|
-| ![](./docs/product-page.png) | ![](./docs/checkout.png) |
-
-| Mobile Experience |
-|------|
-| ![](./docs/mobile.png) |
-
----
-
 # ✨ Features
 
 ## Editorial Experience
 
 - Cinematic Hero Section
-- Luxury Typography
-- Editorial Layouts
-- GSAP Scroll Animations
-- Framer Motion Interactions
+- Premium Typography
+- Editorial Collection Layouts
+- Smooth Page Animations
 - Responsive Design
-- Premium Visual Storytelling
+- Modern Product Storytelling
 
 ---
 
 ## Ecommerce
 
 - Product Catalogue
-- Product Collections
+- Curated Collections
 - Wishlist
 - Shopping Cart
 - Product Variants
 - Discovery Sets
 - Gift Collections
 - Related Products
-- Reviews
-- Coupon Placeholder
+- Order Summary
 
 ---
 
@@ -166,15 +127,13 @@ Built using **React 19**, **TypeScript**, **TanStack Start**, and **Supabase**, 
 ## Product Pages
 
 - Editorial Hero
-- Bottle Showcase
 - Product Gallery
+- Bottle Showcase
 - Image Zoom
 - Fragrance Notes
 - Story Section
 - Occasion Cards
 - Season Cards
-- FAQ
-- Reviews
 - Sticky Add to Cart
 
 ---
@@ -185,9 +144,9 @@ Built using **React 19**, **TypeScript**, **TanStack Start**, and **Supabase**, 
 - Address Collection
 - Order Summary
 - Cash on Delivery
-- WhatsApp Orders
-- Razorpay Ready
-- Success Page
+- WhatsApp Ordering
+- Checkout architecture prepared for Razorpay integration
+- Order Success Page
 
 ---
 
@@ -195,27 +154,24 @@ Built using **React 19**, **TypeScript**, **TanStack Start**, and **Supabase**, 
 
 - Free Delivery within 3 km of Mahesh Nagar, Jaipur
 - Configurable Delivery Rules
-- Backend Ready
-- Admin Configurable
+- Delivery Status Indicator
+- Backend Configurable
 
 ---
 
 ## Backend
 
-Powered by Supabase
+Powered by Supabase.
 
-Supports:
+Current implementation includes:
 
 - Orders
 - Order Items
-- Reviews
 - Customers
 - Wishlist
-- PostgreSQL
+- PostgreSQL Database
 - Row Level Security
-- Authentication Ready
 - Edge Functions
-
 ---
 
 # 🏗 Architecture
@@ -237,8 +193,18 @@ Supports:
 - Supabase
 - PostgreSQL
 - Edge Functions
-- Authentication
 - Storage
+
+### Deployment
+
+- Vercel
+- Supabase Cloud
+
+### Planned Integrations
+
+- Razorpay Payments
+- Twilio WhatsApp API
+- Resend Email API
 
 ### Deployment
 
@@ -336,35 +302,29 @@ npm run preview
 - Route Splitting
 - Code Splitting
 - Lazy Loading
+- Optimized Asset Loading
 - Responsive Images
 - Dynamic Imports
-- Optimized Assets
-- SEO Optimized
-- Lighthouse Friendly
-- Production Ready
+- SEO-friendly Architecture
 
 ---
 
 # 🔒 Security
 
-- Row Level Security (RLS)
-- Secure API Architecture
-- Environment Variable Isolation
-- Authentication Ready
+# 🔒 Security
+
+- Supabase Row Level Security (RLS)
+- Environment Variables
 - Input Validation
-- Secure Checkout Architecture
 
 ---
 
 # ♿ Accessibility
 
 - Semantic HTML
-- Keyboard Navigation
-- ARIA Labels
-- Focus States
-- Screen Reader Friendly
-- Reduced Motion Support
+- Keyboard-friendly Navigation
 - Responsive Typography
+- Reduced Motion Support
 
 ---
 
@@ -383,9 +343,7 @@ npm run preview
 
 ---
 
-# 👨‍💻 Author
-
-## Anjali Kamal
+##  Made by Anjali Kamal
 📍 Jaipur, Rajasthan, India
 
 ### Connect with Me
@@ -397,10 +355,7 @@ npm run preview
 
 ---
 
-# ⭐ Support
-
 If you like this project, consider giving it a ⭐ on GitHub.
-It helps the project reach more developers and motivates future improvements.
 
 ---
 
