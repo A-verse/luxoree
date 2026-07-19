@@ -162,14 +162,6 @@ function Hero() {
               <span className="relative">Shop the Collection</span>
               <ArrowRight className="relative h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Link>
-            <Link
-              to="/shop/$slug"
-              params={{ slug: heroPerfume.slug }}
-              className="inline-flex items-center gap-2 text-[11px] font-medium uppercase tracking-[0.35em] text-ivory/80 transition-colors hover:text-gold"
-            >
-              Discover {heroPerfume.name}
-              <span aria-hidden className="h-px w-8 bg-current transition-all group-hover:w-12" />
-            </Link>
           </div>
 
           <dl className="hero-meta mt-9 grid max-w-md grid-cols-3 gap-5 border-t border-border/40 pt-5">
