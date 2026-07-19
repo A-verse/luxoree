@@ -58,6 +58,7 @@ export type Perfume = {
   trending?: boolean;
   signature?: boolean;
   image: string;
+  lifestyleImage?: string; // NEW — full-bleed hero/editorial shot
   seo: { title: string; description: string };
 };
 
@@ -128,6 +129,7 @@ export const perfumes: Perfume[] = [
     signature: true,
     reviews: baseReviews("midnight-oud"),
     image: midnightOudAsset,
+    lifestyleImage: midnightOudAsset,
     seo: {
       title: "Midnight Oud — Aged Oud Eau de Parfum | Luxorée",
       description:

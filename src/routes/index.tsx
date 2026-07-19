@@ -116,7 +116,7 @@ function Hero() {
   return (
     <section
       ref={heroRef}
-      className="relative isolate overflow-hidden bg-background"
+      className="relative isolate flex min-h-[88dvh] items-center overflow-hidden bg-background md:min-h-[88vh]"
       aria-label="Luxorée — Live Luxuriously"
     >
       {/* Ambient background: gold glow + fine grain */}
@@ -126,35 +126,20 @@ function Hero() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent,rgba(0,0,0,0.8))]" />
       </div>
 
-      {/* Vertical rules */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-y-0 left-6 hidden w-px bg-gold/20 md:block"
-      />
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-y-0 right-6 hidden w-px bg-gold/20 md:block"
-      />
-
-      {/* Rotating vertical caption */}
-      <div className="pointer-events-none absolute left-6 top-1/2 hidden -translate-y-1/2 -rotate-90 origin-left text-[10px] uppercase tracking-[0.5em] text-gold/70 md:block">
-        Eau de Parfum · Est. 2024 · Made in India
-      </div>
-
-      <div className="relative mx-auto grid min-h-[92dvh] max-w-[1400px] grid-cols-1 items-center gap-8 px-6 pb-16 pt-14 md:grid-cols-12 md:pb-24 md:pt-20 lg:px-16">
+      <div className="relative mx-auto grid w-full max-w-[1400px] grid-cols-1 items-center gap-8 px-6 py-10 md:grid-cols-12 md:gap-10 md:py-12 lg:px-16">
         {/* Left / Text column */}
         <motion.div
           style={{ y: yText, opacity }}
           className="relative z-10 md:col-span-6 lg:col-span-6"
         >
-          <div className="mb-8 flex items-center gap-3 hero-meta">
+          <div className="mb-5 flex items-center gap-3 hero-meta">
             <span className="h-px w-10 bg-gold" />
             <span className="text-[10px] font-medium uppercase tracking-[0.45em] text-gold">
               The 2026 Collection
             </span>
           </div>
 
-          <h1 className="font-display text-[13vw] leading-[0.92] tracking-[-0.01em] text-ivory sm:text-7xl md:text-[6.5rem] lg:text-[8rem]">
+          <h1 className="font-display text-[9vw] leading-[0.9] tracking-[-0.01em] text-ivory sm:text-5xl md:text-[4.4rem] lg:text-[5.5rem]">
             <span className="block overflow-hidden">
               <span className="hero-line block">Wear the</span>
             </span>
@@ -163,15 +148,15 @@ function Hero() {
             </span>
           </h1>
 
-          <p className="hero-meta mt-8 max-w-md text-base leading-relaxed text-ivory/70 md:text-lg">
+          <p className="hero-meta mt-6 max-w-md text-base leading-relaxed text-ivory/70">
             Eight hand-blended fragrances, built on 25–30% parfum concentrate. The kind of scent
             that stays in a room for hours after you leave.
           </p>
 
-          <div className="hero-meta mt-10 flex flex-wrap items-center gap-4">
+          <div className="hero-meta mt-7 flex flex-wrap items-center gap-4">
             <Link
               to="/shop"
-              className="group relative inline-flex items-center gap-3 overflow-hidden rounded-sm bg-gold px-8 py-4 text-[11px] font-semibold uppercase tracking-[0.35em] text-background transition-all hover:shadow-[0_20px_60px_-15px_rgba(201,162,76,0.5)]"
+              className="group relative inline-flex items-center gap-3 overflow-hidden rounded-sm bg-gold px-7 py-3.5 text-[11px] font-semibold uppercase tracking-[0.35em] text-background transition-all hover:shadow-[0_20px_60px_-15px_rgba(201,162,76,0.5)]"
             >
               <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/30 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
               <span className="relative">Shop the Collection</span>
@@ -187,7 +172,7 @@ function Hero() {
             </Link>
           </div>
 
-          <dl className="hero-meta mt-14 grid max-w-md grid-cols-3 gap-6 border-t border-border/40 pt-8">
+          <dl className="hero-meta mt-9 grid max-w-md grid-cols-3 gap-5 border-t border-border/40 pt-5">
             <div>
               <dt className="text-[10px] uppercase tracking-[0.3em] text-gold">Longevity</dt>
               <dd className="mt-1 font-display text-xl text-ivory">10+ hrs</dd>
@@ -204,13 +189,13 @@ function Hero() {
         </motion.div>
 
         {/* Right / Bottle column */}
-        <div className="relative z-10 md:col-span-6 lg:col-span-6">
+        <div className="relative z-10 flex justify-center md:col-span-6 lg:col-span-6 md:justify-end">
           <motion.div
             style={{ y: yBottle, scale: scaleBottle }}
-            className="relative mx-auto aspect-[3/4] w-full max-w-[520px]"
+            className="relative aspect-[3/4] w-full max-w-[380px]"
           >
             {/* Floating watermark word */}
-            <div className="absolute -left-8 top-8 -rotate-90 origin-top-left font-display text-[9rem] leading-none tracking-tighter text-ivory/[0.04] md:text-[11rem]">
+            <div className="absolute -left-6 top-6 -rotate-90 origin-top-left font-display text-[6.4rem] leading-none tracking-tighter text-ivory/[0.04] md:text-[7.8rem]">
               LUXORÉE
             </div>
 
@@ -222,7 +207,7 @@ function Hero() {
             <img
               src={heroPerfume.image}
               alt={`${heroPerfume.name} — signature bottle`}
-              className="relative h-full w-full object-contain drop-shadow-[0_50px_80px_rgba(0,0,0,0.7)]"
+              className="relative h-full w-full scale-100 object-contain object-center drop-shadow-[0_50px_80px_rgba(0,0,0,0.7)]"
             />
 
             {/* Product label callout */}
@@ -230,14 +215,14 @@ function Hero() {
               initial={reduce ? false : { opacity: 0, y: 20 }}
               animate={reduce ? undefined : { opacity: 1, y: 0 }}
               transition={{ delay: 1.3, duration: 0.9 }}
-              className="absolute bottom-6 right-0 hidden max-w-[220px] rounded-sm border border-gold/30 bg-background/70 p-4 backdrop-blur-md md:block"
+              className="absolute bottom-4 right-0 hidden max-w-[200px] rounded-sm border border-gold/30 bg-background/70 p-3.5 backdrop-blur-md md:block"
             >
               <p className="text-[10px] uppercase tracking-[0.3em] text-gold">Signature</p>
-              <p className="mt-1 font-display text-2xl text-ivory">{heroPerfume.name}</p>
+              <p className="mt-1 font-display text-xl text-ivory">{heroPerfume.name}</p>
               <p className="mt-1 text-[11px] italic text-ivory/60">{heroPerfume.tagline}</p>
-              <div className="mt-3 flex items-center justify-between">
+              <div className="mt-2 flex items-center justify-between">
                 <span className="text-[10px] uppercase tracking-[0.25em] text-ivory/70">50ml</span>
-                <span className="font-display text-lg text-gold">₹{heroPerfume.price}</span>
+                <span className="font-display text-base text-gold">₹{heroPerfume.price}</span>
               </div>
             </motion.div>
           </motion.div>
@@ -249,7 +234,7 @@ function Hero() {
         initial={reduce ? false : { opacity: 0 }}
         animate={reduce ? undefined : { opacity: 1 }}
         transition={{ delay: 1.8, duration: 1 }}
-        className="pointer-events-none absolute bottom-6 left-1/2 -translate-x-1/2 text-[10px] uppercase tracking-[0.4em] text-ivory/40"
+        className="pointer-events-none absolute bottom-3 left-1/2 -translate-x-1/2 text-[10px] uppercase tracking-[0.4em] text-ivory/50"
       >
         Scroll to explore
       </motion.div>
